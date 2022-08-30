@@ -257,6 +257,7 @@ const validationRules = {
       generateRule.beginEndWith('a-z A-Z 0-9'),
       generateRule.length({ max: 56 })
     ],
+    description: [generateRule.length({ max: 500 })],
     combobox: [generateRule.required()]
   },
   project: {
